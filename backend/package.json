@@ -1,0 +1,30 @@
+{
+  "name": "rcn-nft_marketplace-backend",
+  "version": "1.0.0",
+  "description": "RCN based NFT marketplace, RCN(Roman’s Chain) is a Cryptocurrency Token Based on Ethereum Blockchain Network",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/roman-ojha/rcn-nft_marketplace.git"
+  },
+  "keywords": [
+    "NFT",
+    "NFT marketplace",
+    "Cryptocurrency",
+    "smart contract",
+    "solidity",
+    "hardhat",
+    "Web3",
+    "DApp"
+  ],
+  "author": "roman-ojha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roman-ojha/rcn-nft_marketplace/issues"
+  },
+  "homepage": "https://github.com/roman-ojha/rcn-nft_marketplace#readme",
+  "devDependencies": {
+    "hardhat": "^2.11.1"
+  }
+}
