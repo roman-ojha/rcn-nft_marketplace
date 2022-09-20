@@ -1,0 +1,6 @@
+@use "../utils" as *;
+
+.container {
+  background-color: get-color("primary", 600);
+  height: 100vh;
+}

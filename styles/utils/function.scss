@@ -1,0 +1,14 @@
+@use "./variables.scss" as *;
+
+@function get-color($shades, $shade) {
+  $color: map-get(
+    $map:
+      map-get(
+        $map: $colors,
+        $key: $shades,
+      ),
+    $key: $shade,
+  );
+
+  @return $color;
+}
