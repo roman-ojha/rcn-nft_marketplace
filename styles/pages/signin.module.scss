@@ -4,6 +4,9 @@
   background-color: get-color("primary", 600);
   height: 100vh;
   overflow: hidden;
+  @include mq("els", true, false) {
+    background-color: red;
+  }
   .left_part {
     height: 150vh;
     width: 40%;
