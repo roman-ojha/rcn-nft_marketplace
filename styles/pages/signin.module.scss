@@ -3,4 +3,36 @@
 .container {
   background-color: get-color("primary", 600);
   height: 100vh;
+  overflow: hidden;
+  .left-part {
+    height: 150vh;
+    width: 40%;
+    border-radius: 0px 50% 50% 0px;
+    position: relative;
+    top: -25%;
+    background: get-color("primary", 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-inner-component {
+      border: 1px solid red;
+      height: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .app-icon {
+        position: relative;
+        width: 3rem;
+        height: 3rem;
+      }
+      h1 {
+        color: white;
+        font-size: 1.5rem;
+        font-family: get-font-family("primary");
+        letter-spacing: 2px;
+      }
+    }
+  }
 }

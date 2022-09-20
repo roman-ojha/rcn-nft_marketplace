@@ -12,3 +12,15 @@
 
   @return $color;
 }
+
+@function get-font-family($type) {
+  $font-family: map-get(
+    $map:
+      map-get(
+        $map: $fonts,
+        $key: ff,
+      ),
+    $key: $type,
+  );
+  @return $font-family;
+}
