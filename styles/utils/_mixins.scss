@@ -1,6 +1,6 @@
-@mixin sideBar($background_image) {
+@mixin sideBar($background_image, $height) {
   background-image: url($background_image);
-  height: 5vh;
+  height: $height;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,4 +9,6 @@
   align-items: flex-end;
   padding: 1rem 0rem 0.4rem 0.4rem;
   cursor: pointer;
+  transition-duration: 200ms;
+  filter: brightness(0.9);
 }

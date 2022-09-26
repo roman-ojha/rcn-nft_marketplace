@@ -4,10 +4,11 @@
   height: get-constant(header-height);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   .logo {
     display: flex;
     align-items: center;
+    margin-left: 1rem;
     &__icon {
       position: relative;
       width: 2.5rem;
@@ -94,6 +95,7 @@
       position: relative;
       width: 2.5rem;
       height: 2.5rem;
+      margin-right: 1rem;
       span {
         border-radius: 50%;
       }

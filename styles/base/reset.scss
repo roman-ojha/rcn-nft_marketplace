@@ -23,6 +23,11 @@
       --#{$screen}-#{$key}: #{$value};
     }
   }
+
+  // constant
+  @each $constant, $value in $constants {
+    --const-#{$constant}: #{$value};
+  }
 }
 
 * {

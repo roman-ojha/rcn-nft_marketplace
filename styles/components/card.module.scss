@@ -9,6 +9,11 @@
   gap: 0.5rem;
   border-radius: $card_border_radius;
   box-shadow: 2px 5px 10px rgb(194, 194, 194);
+  cursor: pointer;
+  transition-duration: 150ms;
+  &:hover {
+    transform: scale(1.01);
+  }
   .nft_image {
     width: 100%;
     flex-grow: 3;

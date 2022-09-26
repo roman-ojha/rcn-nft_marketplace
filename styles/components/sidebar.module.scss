@@ -15,31 +15,50 @@
     gap: 0.5rem;
     &__trending {
       @include sideBar(
-        "https://images.unsplash.com/photo-1510936723039-063b76afd29e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+        "https://images.unsplash.com/photo-1510936723039-063b76afd29e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+        get-constant(sidebar-active-route-height)
       );
-      height: 15vh;
       border-radius: 1rem 0rem 0rem 0rem;
+      &:hover {
+        height: get-constant(sidebar-hover-route-height);
+      }
     }
     &__top {
       @include sideBar(
-        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        get-constant(sidebar-route-height)
       );
+      &:hover {
+        height: get-constant(sidebar-hover-route-height);
+      }
     }
     &__new {
       @include sideBar(
-        "https://images.unsplash.com/photo-1529619768328-e37af76c6fe5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        "https://images.unsplash.com/photo-1529619768328-e37af76c6fe5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        get-constant(sidebar-route-height)
       );
+      &:hover {
+        height: get-constant(sidebar-hover-route-height);
+      }
     }
     &__collection {
       @include sideBar(
-        "https://images.unsplash.com/photo-1524779709304-40b5a3560c60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1076&q=80"
+        "https://images.unsplash.com/photo-1524779709304-40b5a3560c60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1076&q=80",
+        get-constant(sidebar-route-height)
       );
+      &:hover {
+        height: get-constant(sidebar-hover-route-height);
+      }
     }
     &__favorite {
       @include sideBar(
-        "https://images.unsplash.com/photo-1590445880716-c8cdf9854376?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        "https://images.unsplash.com/photo-1590445880716-c8cdf9854376?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        get-constant(sidebar-route-height)
       );
       border-radius: 0rem 0rem 0rem 1rem;
+      &:hover {
+        height: get-constant(sidebar-hover-route-height);
+      }
     }
   }
 }
