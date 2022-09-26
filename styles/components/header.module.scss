@@ -1,8 +1,7 @@
-@use "../../utils" as *;
+@use "../utils" as *;
 
 .container {
   height: 3rem;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -64,7 +63,7 @@
     .light_theme_mode {
       justify-content: flex-start;
     }
-    .dart_theme_mode {
+    .dark_theme_mode {
       justify-content: flex-end;
     }
     .theme_button_container {
@@ -77,7 +76,7 @@
       height: $height;
       width: $height * 1.8;
       cursor: pointer;
-      &__theme_button {
+      &__button {
         width: 1.8rem;
         height: 1.8rem;
         background-color: get-color("primary", 800);

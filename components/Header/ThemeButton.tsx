@@ -1,7 +1,7 @@
-import { MouseEventHandler, useEffect, useRef, useState } from "react";
+import { MouseEventHandler, useState } from "react";
 import type { NextPage } from "next";
 import { Icon } from "@iconify/react";
-import styles from "../../../styles/components/Home/header.module.scss";
+import styles from "../../styles/components/header.module.scss";
 
 const ThemeButton: NextPage = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -20,14 +20,13 @@ const ThemeButton: NextPage = () => {
       <div
         id="theme-button-container"
         className={`${styles.theme_button_container} ${
-          theme === "light" ? styles.light_theme_mode : styles.dart_theme_mode
+          theme === "light" ? styles.light_theme_mode : styles.dark_theme_mode
         }`}
-        // ref={theme_button_container}
         onClick={toggleThemeMode}
       >
         <button
           id="theme-button"
-          className={styles.theme_button_container__theme_button}
+          className={styles.theme_button_container__button}
         >
           {theme === "light" ? (
             <Icon
