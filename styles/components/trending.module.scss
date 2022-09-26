@@ -1,0 +1,6 @@
+@use "../utils" as *;
+
+.container {
+  width: calc(100% - $sidebar-width);
+  border: 1px solid darkcyan;
+}
