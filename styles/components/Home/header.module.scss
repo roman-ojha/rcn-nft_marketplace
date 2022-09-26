@@ -1,0 +1,52 @@
+@use "../../utils" as *;
+
+.container {
+  height: 3rem;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .logo {
+    display: flex;
+    align-items: center;
+    &__icon {
+      position: relative;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    &__title {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+  .search_bar {
+    border: 1px solid rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    border-radius: 6px;
+    height: 2em;
+    width: 30%;
+    &__icon {
+    }
+    input {
+      width: 80%;
+      height: 80%;
+      border-width: 0px;
+      &::placeholder {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+      }
+      &:focus {
+        outline: none;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .navbar {
+  }
+  .theme_button_and_profile {
+  }
+}
