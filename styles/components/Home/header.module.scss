@@ -20,7 +20,7 @@
     }
   }
   .search_bar {
-    border: 1px solid rgb(170, 170, 170);
+    border: 1px solid get-color(black, 300);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +29,8 @@
     height: 2em;
     width: 30%;
     &__icon {
+      font-size: 1rem;
+      color: get-color(black, 800);
     }
     input {
       width: 80%;
@@ -46,7 +48,58 @@
     }
   }
   .navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: rgb(94, 94, 94);
+    font-weight: 600;
   }
   .theme_button_and_profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .theme_button_container {
+      $height: 1.8rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid get-color(black, 800);
+      border-radius: 1rem;
+      overflow: hidden;
+      height: $height;
+      width: $height * 2;
+      &__light_mode_button {
+        width: 1.8rem;
+        height: 1.8rem;
+        background-color: get-color("primary", 800);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      &__dart_mode_button {
+        background-color: white;
+        border-width: 0px;
+        width: 1.8rem;
+        height: 1.8rem;
+        cursor: pointer;
+      }
+      &__icon {
+        font-size: 1.1rem;
+        color: white;
+      }
+    }
+    .profile_image {
+      position: relative;
+      width: 2.5rem;
+      height: 2.5rem;
+      span {
+        border-radius: 50%;
+      }
+    }
   }
 }

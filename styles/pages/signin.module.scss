@@ -1,7 +1,7 @@
 @use "../utils" as *;
 
 .container {
-  background-color: get-color("primary", 600);
+  background-color: get-color("primary", 400);
   height: 100vh;
   overflow: hidden;
   .left_part {
@@ -10,7 +10,7 @@
     border-radius: 0px 50% 50% 0px;
     position: relative;
     top: -25%;
-    background: get-color("primary", 100);
+    background: get-color("primary", 900);
     display: flex;
     justify-content: center;
     align-items: center;

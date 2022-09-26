@@ -6,6 +6,9 @@ import constants from "../../../constants/Index";
 import { Icon } from "@iconify/react";
 
 const Index: NextPage = () => {
+  const profileImage =
+    "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80";
+
   return (
     <>
       <section id="navbar" className={styles.container}>
@@ -19,8 +22,32 @@ const Index: NextPage = () => {
           <Icon icon="bi:search" className={styles.search_bar__icon} />
           <input type="text" placeholder="Search Items" />
         </form>
-        <div className={styles.navbar}></div>
-        <div className={styles.theme_button_and_profile}></div>
+        <ul className={styles.navbar}>
+          <li>Explore</li>
+          <li>Create</li>
+          <li>Card</li>
+        </ul>
+        <div className={styles.theme_button_and_profile}>
+          <div className={styles.theme_button_container}>
+            <button
+              className={styles.theme_button_container__light_mode_button}
+            >
+              <Icon
+                icon="carbon:light-filled"
+                className={styles.theme_button_container__icon}
+              />
+            </button>
+            {/* <button className={styles.theme_button_container__dart_mode_button}>
+              <Icon
+                icon="ic:baseline-dark-mode"
+                className={styles.theme_button_container__icon}
+              />
+            </button> */}
+          </div>
+          <div className={styles.profile_image}>
+            <Image src={profileImage} alt="profile" height="100" width="100" />
+          </div>
+        </div>
       </section>
     </>
   );
