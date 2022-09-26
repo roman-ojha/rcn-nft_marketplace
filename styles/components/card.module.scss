@@ -1,22 +1,54 @@
 @use "../utils" as *;
 
 .container {
-  border: 1px solid blue;
+  $card_border_radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
+  border-radius: $card_border_radius;
+  box-shadow: 2px 5px 10px rgb(194, 194, 194);
   .nft_image {
+    width: 100%;
+    flex-grow: 3;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: $card_border_radius;
   }
   .price_title_container {
-    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+      font-size: 1rem;
+      text-transform: capitalize;
+    }
+    &__price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      h3 {
+        font-size: 0.9rem;
+      }
+      h4 {
+        font-size: 0.5rem;
+      }
+    }
   }
   .add_to_card_button {
-    flex-grow: 1;
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    background-color: get-color(secondary, 100);
+    border-width: 0px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 8px;
   }
 }

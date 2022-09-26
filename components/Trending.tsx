@@ -77,6 +77,22 @@ const Trending: NextComponentType = () => {
       nftImage:
         "https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/pexels-pixabay-315788-scaled.jpg",
     },
+    {
+      tokenId: "8",
+      name: "google",
+      price: 3,
+      unit: "RCN",
+      nftImage:
+        "https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/pexels-pixabay-315788-scaled.jpg",
+    },
+    {
+      tokenId: "8",
+      name: "google",
+      price: 3,
+      unit: "RCN",
+      nftImage:
+        "https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/pexels-pixabay-315788-scaled.jpg",
+    },
   ]);
   return (
     <section className={styles.container}>

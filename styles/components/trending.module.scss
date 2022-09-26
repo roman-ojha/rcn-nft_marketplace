@@ -9,8 +9,10 @@
   }
   &__grid_card {
     display: grid;
-    grid-template-rows: repeat(2, get-constant(card-height));
-    grid-template-columns: repeat(4, get-constant(card-width));
+    // grid-template-rows: repeat(2, get-constant(card-height));
+    grid-template-rows: repeat(3, get-constant(card-height));
+    // grid-template-columns: repeat(4, get-constant(card-width));
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
     column-gap: 1rem;
     margin-top: 0.5rem;
