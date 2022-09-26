@@ -1,0 +1,22 @@
+@use "../utils" as *;
+
+.container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .nft_image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .price_title_container {
+    flex-grow: 1;
+  }
+  .add_to_card_button {
+    flex-grow: 1;
+  }
+}

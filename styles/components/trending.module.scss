@@ -1,11 +1,19 @@
 @use "../utils" as *;
 
 .container {
-  width: calc(100% - $sidebar-width);
+  width: calc(100% - get-constant(sidebar-width));
   // border: 1px solid darkcyan;
+  padding: 1rem;
   .title {
     letter-spacing: 2px;
   }
   &__grid_card {
+    display: grid;
+    grid-template-rows: repeat(2, get-constant(card-height));
+    grid-template-columns: repeat(4, get-constant(card-width));
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-top: 0.5rem;
+    justify-content: space-between;
   }
 }

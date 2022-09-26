@@ -1,7 +1,7 @@
 @use "../utils" as *;
 
 .container {
-  height: $header-height;
+  height: get-constant(header-height);
   display: flex;
   align-items: center;
   justify-content: space-around;
