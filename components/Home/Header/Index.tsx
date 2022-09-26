@@ -4,6 +4,7 @@ import Image from "next/image";
 import appIcon from "../../../assets/images/appIcon.png";
 import constants from "../../../constants/Index";
 import { Icon } from "@iconify/react";
+import ThemeButton from "./ThemeButton";
 
 const Index: NextPage = () => {
   const profileImage =
@@ -28,22 +29,7 @@ const Index: NextPage = () => {
           <li>Card</li>
         </ul>
         <div className={styles.theme_button_and_profile}>
-          <div className={styles.theme_button_container}>
-            <button
-              className={styles.theme_button_container__light_mode_button}
-            >
-              <Icon
-                icon="carbon:light-filled"
-                className={styles.theme_button_container__icon}
-              />
-            </button>
-            {/* <button className={styles.theme_button_container__dart_mode_button}>
-              <Icon
-                icon="ic:baseline-dark-mode"
-                className={styles.theme_button_container__icon}
-              />
-            </button> */}
-          </div>
+          <ThemeButton />
           <div className={styles.profile_image}>
             <Image src={profileImage} alt="profile" height="100" width="100" />
           </div>

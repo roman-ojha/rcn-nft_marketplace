@@ -61,17 +61,23 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    .light_theme_mode {
+      justify-content: flex-start;
+    }
+    .dart_theme_mode {
+      justify-content: flex-end;
+    }
     .theme_button_container {
       $height: 1.8rem;
       display: flex;
-      justify-content: flex-start;
       align-items: center;
       border: 1px solid get-color(black, 800);
       border-radius: 1rem;
       overflow: hidden;
       height: $height;
-      width: $height * 2;
-      &__light_mode_button {
+      width: $height * 1.8;
+      cursor: pointer;
+      &__theme_button {
         width: 1.8rem;
         height: 1.8rem;
         background-color: get-color("primary", 800);
@@ -79,14 +85,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
-      }
-      &__dart_mode_button {
-        background-color: white;
-        border-width: 0px;
-        width: 1.8rem;
-        height: 1.8rem;
-        cursor: pointer;
       }
       &__icon {
         font-size: 1.1rem;
